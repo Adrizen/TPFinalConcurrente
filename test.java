@@ -1,30 +1,46 @@
 
-
 public class test {
-    public static void main(String[] args) {
-        final int CANTIDAD_PASAJEROS = 5;
-        Aeropuerto aeropuerto = new Aeropuerto();
 
-        for (int i = 0; i < CANTIDAD_PASAJEROS; i++) {
-            new Thread(new Pasajero("pasajero" + i, aeropuerto)).start();
+    public static void main(String[] args) {
+        final int CANTIDAD_PASAJEROS = 6;
+        final int CANTIDAD_TERMINALES = 2;
+        final int CAPACIDAD_MAXIMA_PUESTOSDEATENCION = 2;
+        final int CAPACIDAD_MAXIMA_TRENINTERNO = 5;
+
+        HallCentral hall = new HallCentral();
+        PuestoDeAtencion[] puestoDeAtencion = new PuestoDeAtencion[2];
+        for (int i = 0; i < puestoDeAtencion.length; i++) {
+            puestoDeAtencion[i] = new PuestoDeAtencion(hall,CAPACIDAD_MAXIMA_PUESTOSDEATENCION);
         }
 
+        Aeropuerto aeropuerto = new Aeropuerto(hall,puestoDeAtencion,CAPACIDAD_MAXIMA_TRENINTERNO);   //no haria falta que el airport tenga el hall
+
+        int numeroReservaPasajero = 0;  // temporal, luego tiene que ser aleatorio.
+        for (int i = 0; i < CANTIDAD_PASAJEROS; i++) {
+            new Thread(new Pasajero("pasajero" + i, aeropuerto,numeroReservaPasajero)).start();
+        }
+
+
     }
+
+
 }
 
 /*
 Como abordar este tipo de problemas:
     -Identificar los hilos: Pasajero, TrenInterno.
-	-Identificar las entidades que forman parte del problema: Aeropuerto, Pasajero, Aerolineas, PuestoDeAtencion, Terminal, FreeShop, TrenInterno.
+	-Identificar las entidades que forman parte del problema: Aeropuerto, Pasajero, Aerolineas, PuestoDeAtencion, Terminal, 
+        FreeShop, TrenInterno.
 	-Identificar las clases correspondientes: Aeropuerto, Pasajero, TrenInterno, PuestoDeInformes.
-Identificar recursos compartidos:
-	-Es necesario asociar herramientas de sincronización para garantizar seguridad: Aeropuerto.
+Identificar recursos compartidos: Aeropuerto, PuestoDeInformes
+	-Es necesario asociar herramientas de sincronización para garantizar seguridad.
 Identificar los eventos de sincronización:
-Cuando un pasajero entra al aeropuerto, se dirige a un puesto de informes (son X) y desde allí a un puesto de atención según su vuelo y aerolinea.
+Cuando un pasajero entra al aeropuerto, se dirige a un puesto de informes (hay tantos puestos de atención como aerolineas) y desde 
+    allí a un puesto de atención según su vuelo y aerolinea.
         Cada puesto de atención tiene una capacidad máxima y se atiende por orden de llegada.
         Los que llegan después que se llenó, esperan en un hall y un guardia les va avisando cuando se desocupa un lugar.
-    Cuando un pasajero hace el check-in, se le informa su terminal y puesto de embarque. A continuación se lo traslada a la terminal y puesto de
-    embarque que le corresponde mediante un tren interno.
+    Cuando un pasajero hace el check-in, se le informa su terminal y puesto de embarque. A continuación se lo traslada a la terminal y 
+        puesto de embarque que le corresponde mediante un tren interno.
 
     En el aeropuerto hay 3 terminales (A, B y C). Cada una tiene puestos de embarque y una sala de embarques compartida.
         A: Puestos de embarque 1 a 7.
