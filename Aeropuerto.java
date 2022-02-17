@@ -39,11 +39,15 @@ public class Aeropuerto {
             Thread.sleep(1500); // Tiempo para atender al pasajero.
             //System.out.println(pasajero.getNombre() + " entra al puesto de informes y le indican que puesto de atención le corresponde");
             puestoInformes.unlock();
-            puestosDeAtencion[pasajero.getReserva()].hacerFilaPuestoDeAtencion(pasajero);
+            puestosDeAtencion[pasajero.getVuelo().getReserva()].hacerFilaPuestoDeAtencion(pasajero);
             trenInterno.dirigirseATerminal();
         } catch (InterruptedException e) {
             System.err.println("Ha ocurrido un error de tipo " + e);
         }
+    }
+
+    // Luego de viajar en el tren interno, el pasajero ingresa a la terminal que le toca.
+    public void ingresarTerminal(Pasajero pasajero){
 
     }
 

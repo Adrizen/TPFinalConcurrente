@@ -20,7 +20,7 @@ public class HallCentral {
     public void esperar(Pasajero pasajero){
         System.out.println(YELLOW_BOLD + pasajero.getNombre() + " espera en el hall central." + RESET);
         try{
-            arregloPuestosDeAtencion[pasajero.getReserva()].acquire();  // un pasajero espera en su semáforo correspondiente.
+            arregloPuestosDeAtencion[pasajero.getVuelo().getReserva()].acquire();  // un pasajero espera en su semáforo correspondiente.
         } catch (InterruptedException e){
             System.out.println("Ha ocurrido un error de tipo " + e);
         }
@@ -29,7 +29,7 @@ public class HallCentral {
 
     public void avisarGuardia(Pasajero pasajero){
         System.out.println("El guardia le avisa a un pasajero que se liberó un lugar en el puesto de atención");
-        arregloPuestosDeAtencion[pasajero.getReserva()].release();  // libera el puesto que tenía en el puesto de atención.
+        arregloPuestosDeAtencion[pasajero.getVuelo().getReserva()].release();  // libera el puesto que tenía en el puesto de atención.
     }
 
 }

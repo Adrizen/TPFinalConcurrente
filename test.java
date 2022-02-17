@@ -30,7 +30,8 @@ public class test {
         Aeropuerto aeropuerto = new Aeropuerto(puestoDeAtencion,CAPACIDAD_MAXIMA_TRENINTERNO, terminales, trenInterno, tiempo);   
 
         for (int i = 0; i < CANTIDAD_PASAJEROS; i++) {
-            new Thread(new Pasajero("pasajero" + i, aeropuerto,r.nextInt(CANTIDAD_AEROLINEAS))).start();
+            new Thread(new Pasajero("pasajero" + i, aeropuerto,new Vuelo(r.nextInt(CANTIDAD_AEROLINEAS)))).start();
+            // Nota: A la hora de crear el vuelo, su n° de reserva es creada de manera aleatoria.
         }
 
 
