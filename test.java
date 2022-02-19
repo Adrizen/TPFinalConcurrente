@@ -8,6 +8,7 @@ public class test {
         final int CANTIDAD_AEROLINEAS = 2;  // cantidad de aerolineas en el aeropuerto. (existe un puesto de atención x aerolinea)
         final int CAPACIDAD_MAXIMA_PUESTOSDEATENCION = 2;   // cuantos pasajeros puede haber esperando en un puesto de atención.
         final int CAPACIDAD_MAXIMA_TRENINTERNO = 5;         // capacidad máxima del tren interno del aeropuerto.
+        final int CAPACIDAD_MAXIMA_FREESHOP = 5;
         final int HORA_INICIAL_AEROPUERTO = 6;              // la hora inicial del aeropuerto. (atiende de 6hs a 22hs)
         final int CANTIDAD_TERMINALES = 3;                  // la consigna dice que son 3 terminales: A, B y C.
 
@@ -24,7 +25,8 @@ public class test {
         }
 
         for (int i = 0; i < terminales.length; i++) {
-            terminales[i] = new Terminal((char)(65+i)); // se asigna las letras A, B y C a las terminales.
+            terminales[i] = new Terminal((char)(65+i),CAPACIDAD_MAXIMA_FREESHOP); 
+            // se asigna las letras A, B y C a las terminales. Cada terminal tiene un FreeShop con una capacidad máxima definida.
         }
 
         Aeropuerto aeropuerto = new Aeropuerto(puestoDeAtencion,CAPACIDAD_MAXIMA_TRENINTERNO, terminales, trenInterno, tiempo);   

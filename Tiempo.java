@@ -1,4 +1,5 @@
-public class Tiempo implements Runnable {
+
+public class Tiempo implements Runnable {   // Este hilo controla la hora del aeropuerto.
 
     private int horaActual;
     

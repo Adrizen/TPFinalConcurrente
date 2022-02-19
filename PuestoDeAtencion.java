@@ -8,14 +8,16 @@ public class PuestoDeAtencion {
 
     private ArrayBlockingQueue<Pasajero> puestoDeAtencion; // Cola del puesto de atención para atender a los pasajeros en órden.
     private HallCentral hallCentral; // Hall central donde esperan los que no se pueden formar en la cola del puesto de atención.
-                                     // este hall central es compartido por todos los puesto de atención.
+                                     // este hall central es compartido por todos los puestos de atención.
 
-    private ReentrantLock mutex = new ReentrantLock(); // mutex de la cola "puestoDeAtencion".
+    private ReentrantLock mutex = new ReentrantLock(); // mutex del ArrayBlockingQueue "puestoDeAtencion".
+    private int pasajerosEsperandoEnHall; // Cantidad de pasajeros que están esperando en el hall central a que se desocupe un lugar.
 
     // Constructor.
     public PuestoDeAtencion(HallCentral h, int c) {
-        puestoDeAtencion = new ArrayBlockingQueue<Pasajero>(c);
-        hallCentral = h;
+        this.puestoDeAtencion = new ArrayBlockingQueue<Pasajero>(c);
+        this.hallCentral = h;
+        this.pasajerosEsperandoEnHall = 0;
     }
 
     // Los pasajeros hacen fila en este puesto de atención de una aerolinea particular.
@@ -26,15 +28,20 @@ public class PuestoDeAtencion {
             boolean bandera = puestoDeAtencion.offer(pasajero); // colocar al pasajero en la cola de espera. Si éxito, devuelve true.
             mutex.unlock();
             if (bandera) { // Se pudo colocar al pasajero en la cola del puesto de atención.
-                System.out.println(GREEN_BOLD + pasajero.getNombre() + " con reserva n° " + pasajero.getVuelo().getReserva()
-                        + " ingresa al puesto de atención que le corresponde." + RESET);
+                System.out.println(
+                        GREEN_BOLD + pasajero.getNombre() + " con reserva n° " + pasajero.getVuelo().getReserva()
+                                + " ingresa al puesto de atención que le corresponde." + RESET);
                 atenderPasajero(pasajero);
                 System.out.println(
                         GREEN_BOLD + pasajero.getNombre() + " se dirige a la estación del tren interno." + RESET);
                 atendido = true;
             } else { // No se pudo colocar al pasajero en la cola de espera (no había lugar). Pasajero se dirige al hall central a esperar.
-                System.err.println(RED_BOLD + "No hay lugar en el puesto de atención. " + pasajero.getNombre()
-                        + " se dirige al hall central a esperar un lugar." + RESET);
+                System.err.println(RED_BOLD + pasajero.getNombre()
+                        + " intentó entrar a su puesto de atención correspondiente pero no hay lugar. El pasajero se dirige al hall central a esperar"
+                        + RESET);
+                mutex.lock();
+                pasajerosEsperandoEnHall++;
+                mutex.unlock();
                 hallCentral.esperar(pasajero); // El pasajero se dirige al hall central a esperar un lugar en el puesto de atención.
             }
         }
@@ -45,8 +52,9 @@ public class PuestoDeAtencion {
         try {
             Thread.sleep(4000); // tiempo para atender al pasajero en el puesto de atención.
             mutex.lock();
-            if (puestoDeAtencion.remainingCapacity() == 0) { // Si la capacidad del puesto de atención estaba llena ...
+            if (puestoDeAtencion.remainingCapacity() == 0 && pasajerosEsperandoEnHall > 0) { // Si la capacidad del puesto de atención estaba llena ...
                 hallCentral.avisarGuardia(pasajero); // ... aviso al guardia que se desocupó un lugar.
+                pasajerosEsperandoEnHall--;
                 // Con esta condición se evita liberar varios permisos en el semáforo correspondiente del hall central.
             }
             puestoDeAtencion.take(); // saco al pasajero que acabo de atender de la cola de espera.
