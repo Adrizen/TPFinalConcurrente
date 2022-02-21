@@ -51,6 +51,20 @@ public class Aeropuerto {
         trenInterno.dirigirseATerminal();
     }
 
+    public void intentarIngresarFreeShop(Pasajero pasajero) {
+        switch (pasajero.getVuelo().getTerminal()) {
+            case 'A':
+                terminales[0].intentarIngresarFreeShop(pasajero);
+                break;
+            case 'B':
+                terminales[1].intentarIngresarFreeShop(pasajero);
+                break;
+            case 'C':
+                terminales[2].intentarIngresarFreeShop(pasajero);
+                break;
+        }
+    }
+
     public int getHora() {
         return this.horario.getHora();
     }

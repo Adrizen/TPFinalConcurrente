@@ -66,7 +66,7 @@ public class PuestoDeAtencion {
     }
 
     // Asigna a un pasajero un puesto de embarque de manera aleatoria usando como semilla su reserva (es decir, su aerolinea)
-    // de esta forma, dados dos pasajeros con la misma aerolinea, se le asignará el mismo puesto de embarque y terminal.
+    // de esta forma, dados dos pasajeros con la misma reserva, se le asignará el mismo puesto de embarque y terminal.
     private void asignarPuestoDeEmbarque(Pasajero pasajero) {
         Random r = new Random(pasajero.getVuelo().getReserva());
         int puestoDeEmbarque = r.nextInt(21 - 1) + 1; // Se genera un puesto de embarque de manera aleatoria para el pasajero.
