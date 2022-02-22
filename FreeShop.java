@@ -14,7 +14,7 @@ public class FreeShop {
     public boolean intentarIngresar() {
         boolean pudoIngresar = false;
         mutex.lock();
-        if (CAPACIDAD_MAXIMA < cantidadPersonasActual) {
+        if (CAPACIDAD_MAXIMA > cantidadPersonasActual) {
             pudoIngresar = true;
             cantidadPersonasActual++;
         }
@@ -25,7 +25,7 @@ public class FreeShop {
     public void ingresar(Pasajero pasajero) {
         System.out.println(pasajero.getNombre() + " ingresó al FreeShop.");
         try {
-            Thread.sleep(5000); // tiempo que tarda el pasajero en estar en el FreeShop.
+            Thread.sleep(10000); // tiempo que tarda el pasajero en estar en el FreeShop. (10 seg)
         } catch (InterruptedException e) {
             System.err.println("Ha ocurrido un error de tipo " + e);
         }

@@ -1,6 +1,5 @@
 
 import static Auxiliares.Colores.*;
-
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Aeropuerto {

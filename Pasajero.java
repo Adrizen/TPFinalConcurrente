@@ -21,23 +21,19 @@ public class Pasajero implements Runnable {
         reserva determinada, la hora del vuelo será la misma para todos los pasajeros. */
         //int horaVueloAleatoria = r.nextInt(23) + 1;
         //this.vuelo.setHoraVuelo(LocalTime.of(horaVueloAleatoria, 00));
-        System.out.println(
-                "reserva: " + vuelo.getReserva() + " para " + this.nombre + " hora vuelo: " + vuelo.getHoraVuelo()); //TODO: Debug
         // Se acaba de setear la hora del vuelo (usando LocalTime), con upperbound '23' y 00 minutos.
         this.atendido = false;
     }
 
     public void run() {
         while (!atendido) { // Mientras no hayan atendido a este pasajero, intentará entrar al aeropuerto. 
+            System.out.println(this.nombre + " tiene el vuelo " + vuelo.getNombre()); // TODO: Debug.
             if (aeropuerto.intentarIngresarAeropuerto()) {
                 atendido = true; // Pudo entrar al aeropuerto, lo van a atender.
                 aeropuerto.ingresarAeropuerto(this);
                 aeropuerto.viajarATerminal(this);
-                System.out.println("hora aeropuerto: " + aeropuerto.getHora() + ". hora vuelo de " + this.nombre + ": "
-                        + vuelo.getHoraVuelo()); // TODO: Debug.
                 // El Pasajero se dirige al FreeShop solo si tiene como mínimo 2 horas hasta que salga su vuelo.
                 if (Math.abs(aeropuerto.getHora() - vuelo.getHoraVuelo()) >= 2) {
-                    System.out.println(this.nombre + " entró a un freeshop.");
                     aeropuerto.intentarIngresarFreeShop(this);
                 }
                 System.out.println(this.nombre + " se sienta a esperar su vuelo en la sala de embarque general.");

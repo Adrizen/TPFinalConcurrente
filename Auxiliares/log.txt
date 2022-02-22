@@ -1,0 +1,5 @@
+[1;34mHora del vuelo0: 14 Reserva: 0 Puesto de embarque: 0[0m
+[1;34mHora del vuelo2: 18 Reserva: 1 Puesto de embarque: 0[0m
+[1;34mHora del vuelo1: 9 Reserva: 1 Puesto de embarque: 0[0m
+[1;34mHora del vuelo4: 11 Reserva: 0 Puesto de embarque: 0[0m
+[1;34mHora del vuelo3: 3 Reserva: 0 Puesto de embarque: 0[0m

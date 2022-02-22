@@ -1,4 +1,5 @@
 import java.time.LocalTime;
+import static Auxiliares.Colores.*;
 
 public class Tiempo implements Runnable { // Este hilo controla la hora del aeropuerto.
 
@@ -11,6 +12,7 @@ public class Tiempo implements Runnable { // Este hilo controla la hora del aero
     public void run() {
         while (true) {
             try {
+                System.out.println(CYAN_BOLD + "---- Hora aeropuerto: " + this.getHora() + " ----" + RESET);
                 Thread.sleep(10000); // cada 10 segundos, pasa una hora en el aeropuerto.
                 incrementarHora();
             } catch (InterruptedException e) {

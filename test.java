@@ -1,5 +1,7 @@
 import java.time.LocalTime;
 import java.util.Random;
+import static Auxiliares.Log.*;
+
 
 public class test {
 
@@ -12,7 +14,9 @@ public class test {
         final int CAPACIDAD_MAXIMA_FREESHOP = 5;
         final int HORA_INICIAL_AEROPUERTO = 6; // la hora inicial del aeropuerto. (atiende de 6hs a 22hs)
         final int CANTIDAD_TERMINALES = 3; // la consigna dice que son 3 terminales: A, B y C.
+        final int CANTIDAD_VUELOS = 5;  // Cantidad de vuelos.
 
+        crearLog();
         Tiempo tiempo = new Tiempo(HORA_INICIAL_AEROPUERTO); // controla qué hora es en el aeropuerto.
         new Thread(tiempo).start();
         TrenInterno trenInterno = new TrenInterno(CAPACIDAD_MAXIMA_TRENINTERNO);
@@ -20,7 +24,7 @@ public class test {
         PuestoDeAtencion[] puestoDeAtencion = new PuestoDeAtencion[CANTIDAD_AEROLINEAS];
         Terminal[] terminales = new Terminal[CANTIDAD_TERMINALES];
 
-        Vuelo[] vuelos = new Vuelo[CANTIDAD_AEROLINEAS];    // Arreglo de vuelos.
+        Vuelo[] vuelos = new Vuelo[CANTIDAD_VUELOS];    // Arreglo de vuelos.
 
         // CREACIÓN PUESTOS DE ATENCIÓN.
         for (int i = 0; i < puestoDeAtencion.length; i++) {
@@ -37,13 +41,12 @@ public class test {
 
         // CREACIÓN VUELOS.
         int reservaAleatoria = 0;
-        for (int i = 0; i < CANTIDAD_AEROLINEAS; i++) {
+        for (int i = 0; i < CANTIDAD_VUELOS; i++) {
             reservaAleatoria = r.nextInt(CANTIDAD_AEROLINEAS); // Se selecciona una aerolinea de manera aleatoria.
             // Se crea un vuelo y se le asigna la aerolinea del paso anterior.
             int horaVueloAleatoria = r.nextInt(23) + 1;
             LocalTime hora = LocalTime.of(horaVueloAleatoria, 00);
-            Vuelo vuelo = new Vuelo(reservaAleatoria, tiempo,hora);
-            System.out.println("vuelo" + i + " hora: " + hora.getHour());
+            Vuelo vuelo = new Vuelo("vuelo"+i,reservaAleatoria, tiempo,hora);
             vuelos[i] = vuelo;         // Se agrega el vuelo recien creado al arreglo de vuelos.
             new Thread(vuelo).start(); // Se inicia el hilo del vuelo.
         }

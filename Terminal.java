@@ -15,6 +15,8 @@ public class Terminal {
     public void intentarIngresarFreeShop(Pasajero pasajero) {
         if (freeShop.intentarIngresar()) {
             freeShop.ingresar(pasajero);
+        } else {
+            System.out.println(pasajero.getNombre() + " quiso entrar al FreeShop pero estaba lleno.");
         }
     }
 
