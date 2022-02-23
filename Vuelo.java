@@ -27,6 +27,7 @@ public class Vuelo implements Runnable {
                 escribirLOG(BLUE_BOLD + " Hora del " + this.nombre + ": " + horaVuelo.getHour() + " Reserva: " + reserva
                         + " Puesto de embarque: " + puestoDeEmbarque + " " + RESET);
                 if (horaInicialAeropuerto.getHora() == horaVuelo.getHour()) { // Comprobar si es la hora de salida de este vuelo.
+                    escribirLOG("Ha despegado el " + nombre + " . Su hora de despegue eran las " + horaVuelo.getHour());
                     synchronized (this) {
                         // Le avisa a todos los pasajeros que están esperando en el monitor de este objeto que el vuelo va a partir.
                         this.notifyAll();

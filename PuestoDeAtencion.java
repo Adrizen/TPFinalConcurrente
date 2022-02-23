@@ -1,6 +1,5 @@
 import static Auxiliares.Colores.*;
 
-import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.locks.ReentrantLock;
 import static Auxiliares.Log.*;
@@ -60,19 +59,10 @@ public class PuestoDeAtencion {
             }
             puestoDeAtencion.take(); // saco al pasajero que acabo de atender de la cola de espera.
             mutex.unlock();
-            asignarPuestoDeEmbarque(pasajero); // Se le asigna al pasajero a qué terminal tiene que ir.
+            asignarTerminal(pasajero, pasajero.getVuelo().getPuestoDeEmbarque());
         } catch (InterruptedException e) {
             System.err.println("Ha ocurrido un error de tipo " + e);
         }
-    }
-
-    // Asigna a un pasajero un puesto de embarque de manera aleatoria usando como semilla su reserva (es decir, su aerolinea)
-    // de esta forma, dados dos pasajeros con la misma reserva, se le asignará el mismo puesto de embarque y terminal.
-    private void asignarPuestoDeEmbarque(Pasajero pasajero) {
-        Random r = new Random(pasajero.getVuelo().getReserva());
-        int puestoDeEmbarque = r.nextInt(21 - 1) + 1; // Se genera un puesto de embarque de manera aleatoria para el pasajero.
-        pasajero.getVuelo().setPuestoDeEmbarque(puestoDeEmbarque);
-        asignarTerminal(pasajero, puestoDeEmbarque);
     }
 
     // Asigna a un pasajero su terminal correspondiente, dependiendo de su puesto de embarque.

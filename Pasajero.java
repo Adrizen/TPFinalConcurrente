@@ -1,7 +1,6 @@
 
 import static Auxiliares.Colores.*;
 import static Auxiliares.Log.*;
-import java.util.Random;
 
 public class Pasajero implements Runnable {
 
@@ -14,13 +13,6 @@ public class Pasajero implements Runnable {
         this.nombre = n;
         this.aeropuerto = a;
         this.vuelo = v;
-        // Genera una instancia de random usando como semilla la reserva del vuelo del pasajero.
-        Random r = new Random(vuelo.getReserva());
-        /* Setea la hora del vuelo del pasajero de manera aleatoria, usando la semilla establecida previamente. Entonces dada una 
-        reserva determinada, la hora del vuelo será la misma para todos los pasajeros. */
-        //int horaVueloAleatoria = r.nextInt(23) + 1;
-        //this.vuelo.setHoraVuelo(LocalTime.of(horaVueloAleatoria, 00));
-        // Se acaba de setear la hora del vuelo (usando LocalTime), con upperbound '23' y 00 minutos.
         this.atendido = false;
     }
 

@@ -1,10 +1,583 @@
-10:31:38 [1;36m ---- Hora aeropuerto: 6 ---- [0m
-10:31:38 pasajero1 tiene el vuelo vuelo0
-10:31:38 pasajero0 tiene el vuelo vuelo0
-10:31:38 [1;34m Hora del vuelo4: 6 Reserva: 0 Puesto de embarque: 0 [0m
-10:31:38 [1;34m Hora del vuelo3: 6 Reserva: 0 Puesto de embarque: 0 [0m
-10:31:38 [1;34m Hora del vuelo2: 5 Reserva: 0 Puesto de embarque: 0 [0m
-10:31:38 [1;34m Hora del vuelo1: 12 Reserva: 1 Puesto de embarque: 0 [0m
-10:31:38 [1;34m Hora del vuelo0: 21 Reserva: 0 Puesto de embarque: 0 [0m
-10:31:39 [1;32mpasajero1 con reserva n° 0 ingresa al puesto de atención que le corresponde.[0m
-10:31:41 [1;32mpasajero0 con reserva n° 0 ingresa al puesto de atención que le corresponde.[0m
+11:32:48 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+11:32:48 pasajero1 tiene el vuelo vuelo0
+11:32:48 pasajero0 tiene el vuelo vuelo4
+11:32:48 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:32:48 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:32:48 [1;34m Hora del vuelo3: 7 Reserva: 8 Puesto de embarque: 2 [0m
+11:32:48 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:32:48 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:32:49 [1;32mpasajero1 con reserva n° 1 ingresa al puesto de atención que le corresponde.[0m
+11:32:51 [1;32mpasajero0 con reserva n° 5 ingresa al puesto de atención que le corresponde.[0m
+11:32:53 El pasajero1 con reserva 1 es asignado al puesto de embarque n° 8 en terminal B
+11:32:53 [1;32mpasajero1 se dirige a la estación del tren interno.[0m
+11:32:55 El pasajero0 con reserva 5 es asignado al puesto de embarque n° 19 en terminal C
+11:32:55 [1;32mpasajero0 se dirige a la estación del tren interno.[0m
+11:32:55 [1;35mEl tren está lleno y empieza a viajar[0m
+11:32:58 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:32:58 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+11:32:58 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:32:58 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:32:58 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:32:58 [1;34m Hora del vuelo3: 7 Reserva: 8 Puesto de embarque: 2 [0m
+11:32:58 Ha despegado el vuelo3 . Su hora de despegue eran las 7
+11:33:02 [1;35mEl tren ha dejado a todos los pasajeros en su destino y comienza a volver al inicio del recorrido[0m
+11:33:02 pasajero0 ingresó al FreeShop.
+11:33:02 pasajero1 ingresó al FreeShop.
+11:33:08 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:33:08 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+11:33:08 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:33:08 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:33:08 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:33:12 pasajero0 se sienta a esperar su vuelo en la sala de embarque general.
+11:33:12 pasajero1 se sienta a esperar su vuelo en la sala de embarque general.
+11:33:18 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:33:18 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+11:33:18 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:33:18 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:33:18 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:33:28 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:33:28 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:33:28 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+11:33:28 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:33:28 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:33:38 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:33:38 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:33:38 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+11:33:38 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:33:38 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:33:48 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:33:48 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:33:48 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+11:33:48 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:33:48 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:33:58 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:33:58 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:33:58 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+11:33:58 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:33:58 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:34:08 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:34:08 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:34:08 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+11:34:08 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:34:08 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:34:18 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:34:18 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:34:18 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+11:34:18 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:34:18 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:34:28 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:34:28 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:34:28 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+11:34:28 [1;34m Hora del vuelo4: 16 Reserva: 5 Puesto de embarque: 19 [0m
+11:34:28 Ha despegado el vuelo4 . Su hora de despegue eran las 16
+11:34:28 [4;32m pasajero0 subió a su avión y despegó. [0m
+11:34:28 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:34:38 [1;34m Hora del vuelo1: 16 Reserva: 2 Puesto de embarque: 1 [0m
+11:34:38 Ha despegado el vuelo1 . Su hora de despegue eran las 16
+11:34:38 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:34:38 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+11:34:38 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:34:48 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:34:48 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+11:34:48 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:34:58 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:34:58 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+11:34:58 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:35:08 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:35:08 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+11:35:08 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:35:18 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:35:18 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+11:35:18 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:35:28 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:35:28 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+11:35:28 [1;34m Hora del vuelo2: 22 Reserva: 2 Puesto de embarque: 16 [0m
+11:35:28 Ha despegado el vuelo2 . Su hora de despegue eran las 22
+11:35:38 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:35:38 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+11:35:48 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:35:48 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+11:35:58 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:35:58 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+11:36:08 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:36:08 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+11:36:18 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:36:18 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+11:36:28 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:36:28 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+11:36:38 [1;34m Hora del vuelo0: 4 Reserva: 1 Puesto de embarque: 8 [0m
+11:36:38 Ha despegado el vuelo0 . Su hora de despegue eran las 4
+11:36:38 [4;32m pasajero1 subió a su avión y despegó. [0m
+11:36:38 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+11:36:48 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+11:36:58 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+11:37:08 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+11:37:18 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+11:37:28 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+11:37:38 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+11:37:48 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+11:37:58 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+11:38:08 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+11:38:18 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+11:38:28 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+11:38:38 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+11:38:48 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+11:38:58 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+11:39:08 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+11:39:18 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+11:39:28 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+11:39:38 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+11:39:48 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+11:39:58 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+11:40:08 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+11:40:18 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+11:40:28 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+11:40:38 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+11:40:48 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+11:40:58 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+11:41:08 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+11:41:18 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+11:41:28 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+11:41:38 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+11:41:48 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+11:41:58 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+11:42:08 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+11:42:18 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+11:42:28 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+11:42:38 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+11:42:48 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+11:42:58 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+11:43:08 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+11:43:18 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+11:43:28 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+11:43:38 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+11:43:48 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+11:43:59 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+11:44:09 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+11:44:19 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+11:44:29 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+11:44:39 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+11:44:49 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+11:44:59 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+11:45:09 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+11:45:19 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+11:45:29 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+11:45:39 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+11:45:49 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+11:45:59 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+11:46:09 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+11:46:19 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+11:46:29 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+11:46:39 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+11:46:49 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+11:46:59 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+11:47:09 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+11:47:19 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+11:47:29 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+11:47:39 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+11:47:49 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+11:47:59 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+11:48:09 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+11:48:19 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+11:48:29 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+11:48:39 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+11:48:49 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+11:48:59 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+11:49:09 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+11:49:19 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+11:49:29 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+11:49:39 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+11:49:49 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+11:49:59 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+11:50:09 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+11:50:19 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+11:50:29 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+11:50:39 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+11:50:49 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+11:50:59 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+11:51:09 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+11:51:19 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+11:51:29 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+11:51:39 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+11:51:49 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+11:51:59 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+11:52:09 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+11:52:19 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+11:52:29 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+11:52:39 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+11:52:49 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+11:52:59 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+11:53:09 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+11:53:19 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+11:53:29 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+11:53:39 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+11:53:49 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+11:53:59 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+11:54:09 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+11:54:19 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+11:54:29 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+11:54:39 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+11:54:49 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+11:54:59 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+11:55:09 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+11:55:19 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+11:55:29 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+11:55:39 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+11:55:49 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+11:55:59 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+11:56:09 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+11:56:19 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+11:56:29 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+11:56:39 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+11:56:49 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+11:56:59 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+11:57:09 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+11:57:19 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+11:57:29 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+11:57:39 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+11:57:49 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+11:57:59 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+11:58:09 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+11:58:19 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+11:58:29 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+11:58:39 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+11:58:49 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+11:58:59 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+11:59:09 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+11:59:19 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+11:59:29 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+11:59:39 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+11:59:49 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+11:59:59 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:00:09 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:00:19 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:00:29 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:00:39 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:00:49 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:00:59 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:01:09 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:01:19 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:01:29 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:01:39 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:01:49 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:01:59 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:02:09 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:02:19 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:02:29 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:02:40 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:02:50 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:03:00 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:03:10 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:03:20 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:03:30 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:03:40 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:03:50 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:04:00 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:04:10 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:04:20 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:04:30 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:04:40 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:04:50 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:05:00 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:05:10 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:05:20 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:05:30 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:05:40 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:05:50 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:06:00 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:06:10 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:06:20 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:06:30 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:06:40 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:06:50 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:07:00 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:07:10 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:07:20 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:07:30 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:07:40 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:07:50 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:08:00 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:08:10 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:08:20 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:08:30 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:08:40 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:08:50 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:09:00 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:09:10 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:09:20 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:09:30 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:09:40 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:09:50 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:10:00 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:10:10 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:10:20 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:10:30 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:10:40 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:10:50 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:11:00 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:11:10 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:11:20 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:11:30 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:11:40 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:11:50 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:12:00 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:12:10 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:12:20 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:12:30 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:12:40 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:12:50 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:13:00 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:13:10 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:13:20 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:13:30 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:13:40 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:13:50 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:14:00 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:14:10 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:14:20 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:14:30 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:14:40 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:14:50 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:15:00 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:15:10 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:15:20 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:15:30 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:15:40 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:15:50 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:16:00 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:16:10 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:16:20 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:16:30 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:16:40 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:16:50 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:17:00 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:17:10 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:17:20 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:17:30 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:17:40 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:17:50 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:18:00 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:18:10 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:18:20 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:18:30 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:18:40 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:18:50 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:19:00 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:19:10 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:19:20 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:19:30 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:19:40 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:19:50 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:20:00 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:20:10 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:20:20 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:20:30 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:20:40 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:20:50 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:21:00 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:21:10 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:21:20 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:21:30 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:21:40 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:21:50 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:22:00 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:22:10 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:22:20 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:22:30 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:22:41 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:22:51 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:23:01 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:23:11 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:23:21 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:23:31 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:23:41 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:23:51 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:24:01 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:24:11 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:24:21 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:24:31 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:24:41 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:24:51 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:25:01 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:25:11 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:25:21 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:25:31 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:25:41 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:25:51 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:26:01 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:26:11 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:26:21 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:26:31 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:26:41 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:26:51 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:27:01 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:27:11 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:27:21 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:27:31 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:27:41 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:27:51 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:28:01 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:28:11 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:28:21 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:28:31 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:28:41 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:28:51 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:29:01 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:29:11 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:29:21 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:29:31 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:29:41 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:29:51 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:30:01 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:30:11 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:30:21 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:30:31 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:30:41 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:30:51 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:31:01 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:31:11 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:31:21 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:31:31 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:31:41 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:31:51 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:32:01 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:32:11 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:32:21 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:32:31 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:32:41 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:32:51 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:33:01 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:33:11 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:33:21 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:33:31 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:33:41 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:33:51 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:34:01 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:34:11 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:34:21 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:34:31 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:34:41 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:34:51 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:35:01 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:35:11 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:35:21 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:35:31 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:35:41 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:35:51 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:36:01 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:36:11 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:36:21 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:36:31 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:36:41 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:36:51 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:37:01 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:37:11 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:37:21 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:37:31 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:37:41 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:37:51 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:38:01 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:38:11 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:38:21 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:38:31 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:38:41 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:38:51 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:39:01 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:39:11 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:39:21 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:39:31 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:39:41 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:39:51 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:40:01 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:40:11 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:40:21 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:40:31 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:40:41 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:40:51 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:41:01 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:41:11 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:41:21 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:41:31 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:41:41 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:41:51 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:42:01 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:42:11 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:42:21 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:42:31 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:42:41 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:42:51 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:43:01 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:43:11 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:43:21 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:43:32 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:43:42 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:43:52 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:44:02 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:44:12 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:44:22 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:44:32 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:44:42 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:44:52 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:45:02 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:45:12 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:45:22 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:45:32 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:45:42 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:45:52 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:46:02 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:46:12 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:46:22 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:46:32 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:46:42 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:46:52 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:47:02 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:47:12 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:47:22 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:47:32 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:47:42 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:47:52 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:48:02 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:48:12 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:48:22 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:48:32 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:48:42 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:48:52 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:49:02 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:49:12 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:49:22 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:49:32 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:49:42 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:49:52 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:50:02 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:50:12 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:50:22 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:50:32 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:50:42 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:50:52 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:51:02 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:51:12 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:51:22 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+12:51:32 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+12:51:42 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+12:51:52 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+12:52:02 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+12:52:12 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+12:52:22 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+12:52:32 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+12:52:42 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+12:52:52 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+12:53:02 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+12:53:12 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+12:53:22 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+12:53:32 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+12:53:42 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+12:53:52 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+12:54:02 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+12:54:12 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+12:54:22 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+12:54:32 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+12:54:42 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+12:54:52 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+12:55:02 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+12:55:12 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+12:55:22 [1;36m ---- Hora aeropuerto: 21 ---- [0m
