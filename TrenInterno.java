@@ -1,6 +1,7 @@
 import static Auxiliares.Colores.*;
 
 import java.util.concurrent.CyclicBarrier;
+import static Auxiliares.Log.*;
 
 public class TrenInterno implements Runnable {
 
@@ -14,7 +15,7 @@ public class TrenInterno implements Runnable {
     
     // Este run() se ejecutará cuando se llegue a la cantidad 'c' de pasajeros que hayan hecho 'await()'
     public void run(){
-        System.out.println(PURPLE_BOLD + "El tren está lleno y empieza a viajar" + RESET);
+        escribirLOG(PURPLE_BOLD + "El tren está lleno y empieza a viajar" + RESET);
         dejarPasajeros();
     }
 
@@ -29,7 +30,7 @@ public class TrenInterno implements Runnable {
     public void dejarPasajeros(){
         try {
             Thread.sleep(7000); // tiempo en hacer el recorrido e ir dejando a los pasajeros en su terminal correspondiente.
-            System.out.println(PURPLE_BOLD + "El tren ha dejado a todos los pasajeros en su destino y comienza a volver al inicio del recorrido" + RESET);
+            escribirLOG(PURPLE_BOLD + "El tren ha dejado a todos los pasajeros en su destino y comienza a volver al inicio del recorrido" + RESET);
         } catch (InterruptedException e) {
             System.out.println("Ha ocurrido un error de tipo " + e);
         }

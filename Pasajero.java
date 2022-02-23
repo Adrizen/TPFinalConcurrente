@@ -1,7 +1,6 @@
 
 import static Auxiliares.Colores.*;
-
-import java.time.LocalTime;
+import static Auxiliares.Log.*;
 import java.util.Random;
 
 public class Pasajero implements Runnable {
@@ -27,7 +26,7 @@ public class Pasajero implements Runnable {
 
     public void run() {
         while (!atendido) { // Mientras no hayan atendido a este pasajero, intentará entrar al aeropuerto. 
-            System.out.println(this.nombre + " tiene el vuelo " + vuelo.getNombre()); // TODO: Debug.
+            escribirLOG(this.nombre + " tiene el vuelo " + vuelo.getNombre());
             if (aeropuerto.intentarIngresarAeropuerto()) {
                 atendido = true; // Pudo entrar al aeropuerto, lo van a atender.
                 aeropuerto.ingresarAeropuerto(this);
@@ -36,19 +35,19 @@ public class Pasajero implements Runnable {
                 if (Math.abs(aeropuerto.getHora() - vuelo.getHoraVuelo()) >= 2) {
                     aeropuerto.intentarIngresarFreeShop(this);
                 }
-                System.out.println(this.nombre + " se sienta a esperar su vuelo en la sala de embarque general.");
+                escribirLOG(this.nombre + " se sienta a esperar su vuelo en la sala de embarque general.");
                 try {
                     synchronized (vuelo){
-                        vuelo.wait();
+                        vuelo.wait();   // El Pasajero espera en el monitor de su vuelo hasta que sea la hora de despegue.
                     }
-                    System.out.println(this.nombre + " se fue en su avioncito");
+                    escribirLOG(GREEN_UNDERLINED + " " + this.nombre + " subió a su avión y despegó." + " " + RESET);
                 } catch (InterruptedException e) {
                     System.out.println("Ha ocurrido un error de tipo " + e);
                 }
             } else {
                 try {
-                    System.out.println(
-                            RED_BACKGROUND_BRIGHT + "El aeropuerto no está en horario de atención ahora mismo" + RESET);
+                    escribirLOG(
+                            RED_BACKGROUND_BRIGHT + " El aeropuerto no está en horario de atención ahora mismo " + RESET);
                     Thread.sleep(11000); // Intentar entrar de nuevo al aeropuerto en una hora. (aprox 1 seg.)
                 } catch (InterruptedException e) {
                     System.out.println("Ha ocurrido un error de tipo " + e);

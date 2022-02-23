@@ -3,7 +3,7 @@ package Auxiliares;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
-import static Auxiliares.Colores.*;
+import static Auxiliares.Timestamp.*;
 
 public class Log {
     public static PrintWriter log;
@@ -17,7 +17,9 @@ public class Log {
     }
 
     public static synchronized void escribirLOG(String texto) {
-        log.println(texto);
+        String textoConTimestamp = obtenerTimestamp() + " " + texto;
+        System.out.println(textoConTimestamp);
+        log.println(textoConTimestamp);
         log.flush();
     }
 

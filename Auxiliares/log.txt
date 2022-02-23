@@ -1,5 +1,10 @@
-[1;34mHora del vuelo0: 14 Reserva: 0 Puesto de embarque: 0[0m
-[1;34mHora del vuelo2: 18 Reserva: 1 Puesto de embarque: 0[0m
-[1;34mHora del vuelo1: 9 Reserva: 1 Puesto de embarque: 0[0m
-[1;34mHora del vuelo4: 11 Reserva: 0 Puesto de embarque: 0[0m
-[1;34mHora del vuelo3: 3 Reserva: 0 Puesto de embarque: 0[0m
+10:31:38 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+10:31:38 pasajero1 tiene el vuelo vuelo0
+10:31:38 pasajero0 tiene el vuelo vuelo0
+10:31:38 [1;34m Hora del vuelo4: 6 Reserva: 0 Puesto de embarque: 0 [0m
+10:31:38 [1;34m Hora del vuelo3: 6 Reserva: 0 Puesto de embarque: 0 [0m
+10:31:38 [1;34m Hora del vuelo2: 5 Reserva: 0 Puesto de embarque: 0 [0m
+10:31:38 [1;34m Hora del vuelo1: 12 Reserva: 1 Puesto de embarque: 0 [0m
+10:31:38 [1;34m Hora del vuelo0: 21 Reserva: 0 Puesto de embarque: 0 [0m
+10:31:39 [1;32mpasajero1 con reserva n° 0 ingresa al puesto de atención que le corresponde.[0m
+10:31:41 [1;32mpasajero0 con reserva n° 0 ingresa al puesto de atención que le corresponde.[0m

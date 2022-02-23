@@ -3,6 +3,7 @@ import static Auxiliares.Colores.*;
 import java.util.Random;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.locks.ReentrantLock;
+import static Auxiliares.Log.*;
 
 public class PuestoDeAtencion {
 
@@ -28,15 +29,15 @@ public class PuestoDeAtencion {
             boolean bandera = puestoDeAtencion.offer(pasajero); // colocar al pasajero en la cola de espera. Si éxito, devuelve true.
             mutex.unlock();
             if (bandera) { // Se pudo colocar al pasajero en la cola del puesto de atención.
-                System.out.println(
+                escribirLOG(
                         GREEN_BOLD + pasajero.getNombre() + " con reserva n° " + pasajero.getVuelo().getReserva()
                                 + " ingresa al puesto de atención que le corresponde." + RESET);
                 atenderPasajero(pasajero);
-                System.out.println(
+                escribirLOG(
                         GREEN_BOLD + pasajero.getNombre() + " se dirige a la estación del tren interno." + RESET);
                 atendido = true;
             } else { // No se pudo colocar al pasajero en la cola de espera (no había lugar). Pasajero se dirige al hall central a esperar.
-                System.err.println(RED_BOLD + pasajero.getNombre()
+                escribirLOG(RED_BOLD + pasajero.getNombre()
                         + " intentó entrar a su puesto de atención correspondiente pero no hay lugar. El pasajero se dirige al hall central a esperar"
                         + RESET);
                 mutex.lock();
@@ -83,7 +84,7 @@ public class PuestoDeAtencion {
         } else {
             pasajero.getVuelo().setTerminal('C');
         }
-        System.out.println("El " + pasajero.getNombre() + " con reserva " + pasajero.getVuelo().getReserva()
+        escribirLOG("El " + pasajero.getNombre() + " con reserva " + pasajero.getVuelo().getReserva()
                 + " es asignado al puesto de embarque n° " + puestoDeEmbarque + " en terminal "
                 + pasajero.getVuelo().getTerminal());
     }

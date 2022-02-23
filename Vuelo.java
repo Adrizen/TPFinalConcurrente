@@ -24,8 +24,8 @@ public class Vuelo implements Runnable {
     public void run() {
         try {
             while (!despego) { // Mientras este vuelo no haya partido, se comprueba periodicamente si este vuelo tiene que partir.
-                escribirLOG(BLUE_BOLD + "Hora del " + this.nombre + ": " + horaVuelo.getHour() + " Reserva: " + reserva
-                        + " Puesto de embarque: " + puestoDeEmbarque + RESET);
+                escribirLOG(BLUE_BOLD + " Hora del " + this.nombre + ": " + horaVuelo.getHour() + " Reserva: " + reserva
+                        + " Puesto de embarque: " + puestoDeEmbarque + " " + RESET);
                 if (horaInicialAeropuerto.getHora() == horaVuelo.getHour()) { // Comprobar si es la hora de salida de este vuelo.
                     synchronized (this) {
                         // Le avisa a todos los pasajeros que están esperando en el monitor de este objeto que el vuelo va a partir.

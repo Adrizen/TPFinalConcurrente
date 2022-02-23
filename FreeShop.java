@@ -1,4 +1,6 @@
+
 import java.util.concurrent.locks.ReentrantLock;
+import static Auxiliares.Log.*;
 
 public class FreeShop {
     private final int CAPACIDAD_MAXIMA;
@@ -23,7 +25,7 @@ public class FreeShop {
     }
 
     public void ingresar(Pasajero pasajero) {
-        System.out.println(pasajero.getNombre() + " ingresó al FreeShop.");
+        escribirLOG(pasajero.getNombre() + " ingresó al FreeShop.");
         try {
             Thread.sleep(10000); // tiempo que tarda el pasajero en estar en el FreeShop. (10 seg)
         } catch (InterruptedException e) {
