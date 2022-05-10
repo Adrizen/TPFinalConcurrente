@@ -7,7 +7,7 @@ public class test {
     public static void main(String[] args) {
         Random r = new Random();
         final int CAPACIDAD_MAXIMA_PUESTOSDEATENCION = 2; // Cuantos pasajeros como máximo puede haber esperando en un puesto de atención.
-        final int CAPACIDAD_MAXIMA_TRENINTERNO = 2; // Capacidad máxima del tren interno del aeropuerto. (Siempre debe llenarse para viajar x consigna)
+        final int CAPACIDAD_MAXIMA_TRENINTERNO = 2; // Capacidad máxima del tren interno del aeropuerto.(Por consigna, siempre debe llenarse para viajar)
         final int CAPACIDAD_MAXIMA_FREESHOP = 5; // Capacidad máxima de pasajeros en el freeshop.
         final int HORA_INICIAL_AEROPUERTO = 6; // La hora inicial del aeropuerto. (atiende de 6hs a 22hs)
         final int CANTIDAD_TERMINALES = 3; // La consigna dice que son 3 terminales: A, B y C.
@@ -98,5 +98,14 @@ Cuando un pasajero entra al aeropuerto, se dirige a un puesto de informes y desd
     En el aeropuerto hay un tren interno que traslada los pasajeros a la terminal que le corresponde a cada uno. Cuando llega al final del recorrido
     el tren se vacia y vuelve al inicio del recorrido. El tren sale de nuevo una vez que se llena por completo nuevamente.
 
+    Las reservas se generan de manera aleatoria (como dice el enunciado) de entre todas las aerolineas que hay en el aeropuerto.
+    n° reserva = n° puesto de atención = n° aerolinea.
 
+    Mecanismos de sincronización utilizados:
+    TrenInterno: CyclicBarrier. (Los pasajeros van entrando al tren y cuando este llega a su capacidad máxima, comienza a viajar.)
+    HallCentral: Semaphore[]. (Los pasajeros esperan en el hall central porque su puesto de atención está lleno. Cuando se libera un lugar en
+        x puesto de atención, un guardia avisa a los pasajeros de ese puesto de atención x, que hay un lugar libre.)
+    PuestoDeAtencion: ArrayBlockingQueue. (Los pasajeros se van colocando en esta cola para ir siendo atendidos en orden de llegada.)
+                      ReentrantLock. (Utilizado para mutex a la hora de cambiar variables compartidas.)
+    Vuelos: Monitores. (Los pasajeros esperan en el monitor de su vuelo a que sea la hora de partir.)
 */
