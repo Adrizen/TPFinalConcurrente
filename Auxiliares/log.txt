@@ -1,113 +1,86 @@
-13:16:36 [1;36m ---- Hora aeropuerto: 6 ---- [0m
-13:16:36 [1;31mDEBUG: pasajero5 tiene el vuelo vuelo0[0m
-13:16:36 [1;31mDEBUG: pasajero4 tiene el vuelo vuelo0[0m
-13:16:36 [1;31mDEBUG: pasajero3 tiene el vuelo vuelo0[0m
-13:16:36 [1;31mDEBUG: pasajero2 tiene el vuelo vuelo0[0m
-13:16:36 [1;31mDEBUG: pasajero1 tiene el vuelo vuelo0[0m
-13:16:36 [1;31mDEBUG: pasajero0 tiene el vuelo vuelo0[0m
-13:16:36 [1;31mDEBUG: vuelo0 con hora asignada: 5hs. Aerolinea n0. Puesto de embarque n8 [0m
-13:16:37 pasajero5 es atendido en informes y le indican que le corresponde el puesto de atencion n0
-13:16:37 [1;32mpasajero5 ingresa al puesto de atencion n0. En el puesto quedan 1 lugares[0m
-13:16:39 pasajero4 es atendido en informes y le indican que le corresponde el puesto de atencion n0
-13:16:39 [1;32mpasajero4 ingresa al puesto de atencion n0. En el puesto quedan 0 lugares[0m
-13:16:40 pasajero3 es atendido en informes y le indican que le corresponde el puesto de atencion n0
-13:16:40 [1;31mpasajero3 intento entrar al puesto de atencion n0 pero no habia lugar. El pasajero se dirige al hall central a esperar[0m
-13:16:40 [1;33mpasajero3 espera en el hall central.[0m
-13:16:41 [4;36mEl guardia avisa que se libero un lugar en el puesto de atencion n0[0m
-13:16:41 [1;32mpasajero3 ingresa al puesto de atencion n0. En el puesto quedan 0 lugares[0m
-13:16:41 [1;37mEl pasajero5 se va de su puesto de atencion. Le asignaron el puesto de embarque n8 en la terminal B[0m
-13:16:41 [1;33mpasajero5 se dirige a la estacion del tren interno.[0m
-13:16:42 pasajero2 es atendido en informes y le indican que le corresponde el puesto de atencion n0
-13:16:42 [1;31mpasajero2 intento entrar al puesto de atencion n0 pero no habia lugar. El pasajero se dirige al hall central a esperar[0m
-13:16:42 [1;33mpasajero2 espera en el hall central.[0m
-13:16:43 [4;36mEl guardia avisa que se libero un lugar en el puesto de atencion n0[0m
-13:16:43 [1;37mEl pasajero4 se va de su puesto de atencion. Le asignaron el puesto de embarque n8 en la terminal B[0m
-13:16:43 [1;33mpasajero4 se dirige a la estacion del tren interno.[0m
-13:16:43 [1;32mpasajero2 ingresa al puesto de atencion n0. En el puesto quedan 0 lugares[0m
-13:16:43 [1;35mEl tren esta lleno y empieza a viajar[0m
-13:16:43 pasajero1 es atendido en informes y le indican que le corresponde el puesto de atencion n0
-13:16:43 [1;31mpasajero1 intento entrar al puesto de atencion n0 pero no habia lugar. El pasajero se dirige al hall central a esperar[0m
-13:16:43 [1;33mpasajero1 espera en el hall central.[0m
-13:16:45 pasajero0 es atendido en informes y le indican que le corresponde el puesto de atencion n0
-13:16:45 [1;31mpasajero0 intento entrar al puesto de atencion n0 pero no habia lugar. El pasajero se dirige al hall central a esperar[0m
-13:16:45 [1;33mpasajero0 espera en el hall central.[0m
-13:16:45 [4;36mEl guardia avisa que se libero un lugar en el puesto de atencion n0[0m
-13:16:45 [1;37mEl pasajero3 se va de su puesto de atencion. Le asignaron el puesto de embarque n8 en la terminal B[0m
-13:16:45 [1;33mpasajero3 se dirige a la estacion del tren interno.[0m
-13:16:45 [1;32mpasajero1 ingresa al puesto de atencion n0. En el puesto quedan 0 lugares[0m
-13:16:46 [1;36m ---- Hora aeropuerto: 7 ---- [0m
-13:16:47 [4;36mEl guardia avisa que se libero un lugar en el puesto de atencion n0[0m
-13:16:47 [1;37mEl pasajero2 se va de su puesto de atencion. Le asignaron el puesto de embarque n8 en la terminal B[0m
-13:16:47 [1;33mpasajero2 se dirige a la estacion del tren interno.[0m
-13:16:47 [1;32mpasajero0 ingresa al puesto de atencion n0. En el puesto quedan 0 lugares[0m
-13:16:49 [1;37mEl pasajero1 se va de su puesto de atencion. Le asignaron el puesto de embarque n8 en la terminal B[0m
-13:16:49 [1;33mpasajero1 se dirige a la estacion del tren interno.[0m
-13:16:50 [1;35mEl tren ha dejado a todos los pasajeros en su destino y comienza a volver al inicio del recorrido[0m
-13:16:50 [1;35mEl tren esta lleno y empieza a viajar[0m
-13:16:50 [4;37mpasajero4 ingreso al FreeShop de su terminal B. Quedan 1 lugares[0m
-13:16:51 [1;37mEl pasajero0 se va de su puesto de atencion. Le asignaron el puesto de embarque n8 en la terminal B[0m
-13:16:51 [1;33mpasajero0 se dirige a la estacion del tren interno.[0m
-13:16:56 [1;36m ---- Hora aeropuerto: 8 ---- [0m
-13:16:57 [1;35mEl tren ha dejado a todos los pasajeros en su destino y comienza a volver al inicio del recorrido[0m
-13:16:57 [4;37mpasajero2 ingreso al FreeShop de su terminal B. Quedan 0 lugares[0m
-13:16:57 [1;31mpasajero5 quiso entrar al FreeShop de su terminal B pero estaba lleno.[0m
-13:16:57 pasajero5 se sienta a esperar su vuelo en la sala de embarque general.
-13:16:57 [1;35mEl tren esta lleno y empieza a viajar[0m
-13:17:00 pasajero4 se sienta a esperar su vuelo en la sala de embarque general.
-13:17:04 [1;35mEl tren ha dejado a todos los pasajeros en su destino y comienza a volver al inicio del recorrido[0m
-13:17:04 [4;37mpasajero3 ingreso al FreeShop de su terminal B. Quedan 0 lugares[0m
-13:17:04 [1;31mpasajero0 quiso entrar al FreeShop de su terminal B pero estaba lleno.[0m
-13:17:04 pasajero0 se sienta a esperar su vuelo en la sala de embarque general.
-13:17:04 [1;31mpasajero1 quiso entrar al FreeShop de su terminal B pero estaba lleno.[0m
-13:17:04 pasajero1 se sienta a esperar su vuelo en la sala de embarque general.
-13:17:06 [1;36m ---- Hora aeropuerto: 9 ---- [0m
-13:17:07 pasajero2 se sienta a esperar su vuelo en la sala de embarque general.
-13:17:14 pasajero3 se sienta a esperar su vuelo en la sala de embarque general.
-13:17:16 [1;36m ---- Hora aeropuerto: 10 ---- [0m
-13:17:26 [1;36m ---- Hora aeropuerto: 11 ---- [0m
-13:17:36 [1;36m ---- Hora aeropuerto: 12 ---- [0m
-13:17:46 [1;36m ---- Hora aeropuerto: 13 ---- [0m
-13:17:56 [1;36m ---- Hora aeropuerto: 14 ---- [0m
-13:18:06 [1;36m ---- Hora aeropuerto: 15 ---- [0m
-13:18:16 [1;36m ---- Hora aeropuerto: 16 ---- [0m
-13:18:26 [1;36m ---- Hora aeropuerto: 17 ---- [0m
-13:18:36 [1;36m ---- Hora aeropuerto: 18 ---- [0m
-13:18:46 [1;36m ---- Hora aeropuerto: 19 ---- [0m
-13:18:56 [1;36m ---- Hora aeropuerto: 20 ---- [0m
-13:19:06 [1;36m ---- Hora aeropuerto: 21 ---- [0m
-13:19:16 [1;36m ---- Hora aeropuerto: 22 ---- [0m
-13:19:26 [1;36m ---- Hora aeropuerto: 23 ---- [0m
-13:19:36 [1;36m ---- Hora aeropuerto: 0 ---- [0m
-13:19:46 [1;36m ---- Hora aeropuerto: 1 ---- [0m
-13:19:56 [1;36m ---- Hora aeropuerto: 2 ---- [0m
-13:20:06 [1;36m ---- Hora aeropuerto: 3 ---- [0m
-13:20:16 [1;36m ---- Hora aeropuerto: 4 ---- [0m
-13:20:26 [1;36m ---- Hora aeropuerto: 5 ---- [0m
-13:20:36 Ha despegado el vuelo0 . Su hora de despegue eran las 5
-13:20:36 [4;32m pasajero5 subio a su avion y despego. [0m
-13:20:36 [4;32m pasajero4 subio a su avion y despego. [0m
-13:20:36 [4;32m pasajero0 subio a su avion y despego. [0m
-13:20:36 [4;32m pasajero1 subio a su avion y despego. [0m
-13:20:36 [4;32m pasajero2 subio a su avion y despego. [0m
-13:20:36 [4;32m pasajero3 subio a su avion y despego. [0m
-13:20:36 [1;36m ---- Hora aeropuerto: 6 ---- [0m
-13:20:46 [1;36m ---- Hora aeropuerto: 7 ---- [0m
-13:20:56 [1;36m ---- Hora aeropuerto: 8 ---- [0m
-13:21:06 [1;36m ---- Hora aeropuerto: 9 ---- [0m
-13:21:16 [1;36m ---- Hora aeropuerto: 10 ---- [0m
-13:21:26 [1;36m ---- Hora aeropuerto: 11 ---- [0m
-13:21:36 [1;36m ---- Hora aeropuerto: 12 ---- [0m
-13:21:46 [1;36m ---- Hora aeropuerto: 13 ---- [0m
-13:21:56 [1;36m ---- Hora aeropuerto: 14 ---- [0m
-13:22:06 [1;36m ---- Hora aeropuerto: 15 ---- [0m
-13:22:16 [1;36m ---- Hora aeropuerto: 16 ---- [0m
-13:22:26 [1;36m ---- Hora aeropuerto: 17 ---- [0m
-13:22:36 [1;36m ---- Hora aeropuerto: 18 ---- [0m
-13:22:46 [1;36m ---- Hora aeropuerto: 19 ---- [0m
-13:22:56 [1;36m ---- Hora aeropuerto: 20 ---- [0m
-13:23:06 [1;36m ---- Hora aeropuerto: 21 ---- [0m
-13:23:16 [1;36m ---- Hora aeropuerto: 22 ---- [0m
-13:23:26 [1;36m ---- Hora aeropuerto: 23 ---- [0m
-13:23:36 [1;36m ---- Hora aeropuerto: 0 ---- [0m
-13:23:46 [1;36m ---- Hora aeropuerto: 1 ---- [0m
-13:23:56 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+19:08:33 [1;36m ---- Hora aeropuerto: 6 ---- [0m
+19:08:33 [1;31mDEBUG: pasajero4 tiene el vuelo vuelo0[0m
+19:08:33 [1;31mDEBUG: pasajero5 tiene el vuelo vuelo0[0m
+19:08:33 [1;31mDEBUG: pasajero2 tiene el vuelo vuelo1[0m
+19:08:33 [1;31mDEBUG: pasajero3 tiene el vuelo vuelo1[0m
+19:08:33 [1;31mDEBUG: pasajero1 tiene el vuelo vuelo1[0m
+19:08:33 [1;31mDEBUG: pasajero0 tiene el vuelo vuelo0[0m
+19:08:33 [1;31mDEBUG: vuelo1 con hora asignada: 2hs. Aerolinea n1. Puesto de embarque n15 [0m
+19:08:33 [1;31mDEBUG: vuelo0 con hora asignada: 3hs. Aerolinea n1. Puesto de embarque n3 [0m
+19:08:34 pasajero4 es atendido en informes y le indican que le corresponde el puesto de atencion n1
+19:08:34 [1;32mpasajero4 ingresa al puesto de atencion n1. En el puesto quedan 2 lugares[0m
+19:08:36 pasajero5 es atendido en informes y le indican que le corresponde el puesto de atencion n1
+19:08:36 [1;32mpasajero5 ingresa al puesto de atencion n1. En el puesto quedan 1 lugares[0m
+19:08:37 pasajero2 es atendido en informes y le indican que le corresponde el puesto de atencion n1
+19:08:37 [1;32mpasajero2 ingresa al puesto de atencion n1. En el puesto quedan 0 lugares[0m
+19:08:38 [1;37mEl pasajero4 se va de su puesto de atencion. Le asignaron el puesto de embarque n3 en la terminal A[0m
+19:08:38 [1;33mpasajero4 se dirige a la estacion del tren interno.[0m
+19:08:39 pasajero3 es atendido en informes y le indican que le corresponde el puesto de atencion n1
+19:08:39 [1;32mpasajero3 ingresa al puesto de atencion n1. En el puesto quedan 0 lugares[0m
+19:08:40 [1;37mEl pasajero5 se va de su puesto de atencion. Le asignaron el puesto de embarque n3 en la terminal A[0m
+19:08:40 [1;33mpasajero5 se dirige a la estacion del tren interno.[0m
+19:08:40 pasajero1 es atendido en informes y le indican que le corresponde el puesto de atencion n1
+19:08:40 [1;32mpasajero1 ingresa al puesto de atencion n1. En el puesto quedan 0 lugares[0m
+19:08:41 [1;37mEl pasajero2 se va de su puesto de atencion. Le asignaron el puesto de embarque n15 en la terminal B[0m
+19:08:41 [1;33mpasajero2 se dirige a la estacion del tren interno.[0m
+19:08:41 [1;35mEl tren esta lleno y empieza a viajar[0m
+19:08:42 pasajero0 es atendido en informes y le indican que le corresponde el puesto de atencion n1
+19:08:42 [1;32mpasajero0 ingresa al puesto de atencion n1. En el puesto quedan 0 lugares[0m
+19:08:43 [1;36m ---- Hora aeropuerto: 7 ---- [0m
+19:08:43 [1;37mEl pasajero3 se va de su puesto de atencion. Le asignaron el puesto de embarque n15 en la terminal B[0m
+19:08:43 [1;33mpasajero3 se dirige a la estacion del tren interno.[0m
+19:08:44 [1;37mEl pasajero1 se va de su puesto de atencion. Le asignaron el puesto de embarque n15 en la terminal B[0m
+19:08:44 [1;33mpasajero1 se dirige a la estacion del tren interno.[0m
+19:08:46 [1;37mEl pasajero0 se va de su puesto de atencion. Le asignaron el puesto de embarque n3 en la terminal A[0m
+19:08:46 [1;33mpasajero0 se dirige a la estacion del tren interno.[0m
+19:08:48 [1;35mEl tren ha dejado a todos los pasajeros en su destino y comienza a volver al inicio del recorrido[0m
+19:08:48 [1;35mEl tren esta lleno y empieza a viajar[0m
+19:08:48 [4;37mpasajero2 ingreso al FreeShop de su terminal B. Quedan 1 lugares[0m
+19:08:53 [1;36m ---- Hora aeropuerto: 8 ---- [0m
+19:08:53 [0;94mpasajero2 decidio no comprar algo en el FreeShop. Esta todo muy caro.[0m
+19:08:53 pasajero2 se sienta a esperar su vuelo en la sala de embarque general.
+19:08:55 [1;35mEl tren ha dejado a todos los pasajeros en su destino y comienza a volver al inicio del recorrido[0m
+19:08:55 [4;37mpasajero4 ingreso al FreeShop de su terminal A. Quedan 0 lugares[0m
+19:08:55 [4;37mpasajero0 ingreso al FreeShop de su terminal A. Quedan 1 lugares[0m
+19:08:55 [4;37mpasajero1 ingreso al FreeShop de su terminal B. Quedan 0 lugares[0m
+19:08:55 [4;37mpasajero3 ingreso al FreeShop de su terminal B. Quedan 0 lugares[0m
+19:08:55 [1;31mpasajero5 quiso entrar al FreeShop de su terminal A pero estaba lleno.[0m
+19:08:55 pasajero5 se sienta a esperar su vuelo en la sala de embarque general.
+19:09:00 [0;94mpasajero4 decidio no comprar algo en el FreeShop. Esta todo muy caro.[0m
+19:09:00 pasajero4 se sienta a esperar su vuelo en la sala de embarque general.
+19:09:00 [0;94mpasajero0 decidio comprar algo en el FreeShop.[0m
+19:09:00 [0;94mpasajero1 decidio comprar algo en el FreeShop.[0m
+19:09:00 [0;94mpasajero3 decidio comprar algo en el FreeShop.[0m
+19:09:03 [1;36m ---- Hora aeropuerto: 9 ---- [0m
+19:09:05 pasajero3 se sienta a esperar su vuelo en la sala de embarque general.
+19:09:05 pasajero0 se sienta a esperar su vuelo en la sala de embarque general.
+19:09:05 pasajero1 se sienta a esperar su vuelo en la sala de embarque general.
+19:09:13 [1;36m ---- Hora aeropuerto: 10 ---- [0m
+19:09:23 [1;36m ---- Hora aeropuerto: 11 ---- [0m
+19:09:33 [1;36m ---- Hora aeropuerto: 12 ---- [0m
+19:09:43 [1;36m ---- Hora aeropuerto: 13 ---- [0m
+19:09:53 [1;36m ---- Hora aeropuerto: 14 ---- [0m
+19:10:03 [1;36m ---- Hora aeropuerto: 15 ---- [0m
+19:10:13 [1;36m ---- Hora aeropuerto: 16 ---- [0m
+19:10:23 [1;36m ---- Hora aeropuerto: 17 ---- [0m
+19:10:33 [1;36m ---- Hora aeropuerto: 18 ---- [0m
+19:10:43 [1;36m ---- Hora aeropuerto: 19 ---- [0m
+19:10:53 [1;36m ---- Hora aeropuerto: 20 ---- [0m
+19:11:03 [1;36m ---- Hora aeropuerto: 21 ---- [0m
+19:11:13 [1;36m ---- Hora aeropuerto: 22 ---- [0m
+19:11:23 [1;36m ---- Hora aeropuerto: 23 ---- [0m
+19:11:33 [1;36m ---- Hora aeropuerto: 0 ---- [0m
+19:11:43 [1;36m ---- Hora aeropuerto: 1 ---- [0m
+19:11:53 [1;36m ---- Hora aeropuerto: 2 ---- [0m
+19:12:00 Ha despegado el vuelo1 . Su hora de despegue eran las 2
+19:12:00 [4;32m pasajero2 subio a su avion y despego. [0m
+19:12:00 [4;32m pasajero3 subio a su avion y despego. [0m
+19:12:00 [4;32m pasajero1 subio a su avion y despego. [0m
+19:12:03 [1;36m ---- Hora aeropuerto: 3 ---- [0m
+19:12:09 Ha despegado el vuelo0 . Su hora de despegue eran las 3
+19:12:09 [4;32m pasajero5 subio a su avion y despego. [0m
+19:12:09 [4;32m pasajero4 subio a su avion y despego. [0m
+19:12:09 [4;32m pasajero0 subio a su avion y despego. [0m
+19:12:13 [1;36m ---- Hora aeropuerto: 4 ---- [0m
+19:12:23 [1;36m ---- Hora aeropuerto: 5 ---- [0m
+19:12:33 [1;36m ---- Hora aeropuerto: 6 ---- [0m

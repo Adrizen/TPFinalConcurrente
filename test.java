@@ -6,14 +6,14 @@ public class test {
 
     public static void main(String[] args) {
         Random r = new Random();
-        final int CAPACIDAD_MAXIMA_PUESTOSDEATENCION = 2; // Cuantos pasajeros como máximo puede haber esperando en un puesto de atención.
-        final int CAPACIDAD_MAXIMA_TRENINTERNO = 2; // Capacidad máxima del tren interno del aeropuerto.(Por consigna, siempre debe llenarse para viajar)
+        final int CAPACIDAD_MAXIMA_PUESTOSDEATENCION = 3; // Cuantos pasajeros como máximo puede haber esperando en un puesto de atención.
+        final int CAPACIDAD_MAXIMA_TRENINTERNO = 3; // Capacidad máxima del tren interno del aeropuerto.(Por consigna, siempre debe llenarse para viajar)
         final int CAPACIDAD_MAXIMA_FREESHOP = 2; // Capacidad máxima de pasajeros en el freeshop.
         final int HORA_INICIAL_AEROPUERTO = 6; // La hora inicial del aeropuerto. (atiende de 6hs a 22hs)
         final int CANTIDAD_TERMINALES = 3; // La consigna dice que son 3 terminales: A, B y C.
         final int CANTIDAD_AEROLINEAS = 2; // Cantidad de aerolineas en el aeropuerto.
         final int CANTIDAD_PASAJEROS = 6; // Cantidad pasajeros que ingresarán al aeropuerto.
-        final int CANTIDAD_VUELOS = 1; // Cantidad de vuelos.
+        final int CANTIDAD_VUELOS = 2; // Cantidad de vuelos.
 
         crearLog(); // Arhivo log que registra todos los eventos que ocurren en el aeropuerto.
         Tiempo tiempo = new Tiempo(HORA_INICIAL_AEROPUERTO); // Controla qué hora es en el aeropuerto.

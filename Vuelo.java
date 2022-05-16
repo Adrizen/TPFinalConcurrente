@@ -9,7 +9,7 @@ public class Vuelo implements Runnable {
     private int puestoDeEmbarque;
     private Terminal terminal;
     private LocalTime horaVuelo; // Indica a qué hora es el vuelo del pasajero.
-    private Tiempo horaInicialAeropuerto;
+    private Tiempo horaAeropuerto;
 
     private boolean despego;
 
@@ -17,7 +17,7 @@ public class Vuelo implements Runnable {
         this.nombre = n;
         this.aerolinea = a;
         this.despego = false;
-        this.horaInicialAeropuerto = t;
+        this.horaAeropuerto = t;
         this.horaVuelo = hv;
     }
 
@@ -26,7 +26,7 @@ public class Vuelo implements Runnable {
             escribirLOG(RED_BOLD + "DEBUG: " + this.nombre + " con hora asignada: " + horaVuelo.getHour() + "hs. Aerolinea n" + aerolinea
             + ". Puesto de embarque n" + puestoDeEmbarque + " " + RESET);
             while (!despego) { // Mientras este vuelo no haya partido, se comprueba periodicamente si este vuelo tiene que partir.
-                if (horaInicialAeropuerto.getHora() == horaVuelo.getHour()) { // Comprobar si es la hora de salida de este vuelo.
+                if (horaAeropuerto.getHora() == horaVuelo.getHour()) { // Comprobar si es la hora de salida de este vuelo.
                     escribirLOG("Ha despegado el " + nombre + " . Su hora de despegue eran las " + horaVuelo.getHour());
                     synchronized (this) {
                         // Le avisa a todos los pasajeros que están esperando en el monitor de este objeto que el vuelo va a partir.
@@ -34,7 +34,7 @@ public class Vuelo implements Runnable {
                     }
                     despego = true;
                 }
-                Thread.sleep(10000); // Espera 10 segundos, es decir, el mismo tiempo que tarda el aeropuerto en pasar 1 hora.
+                Thread.sleep(9000); // Espera 9 segundos, es decir, un poquito más de lo que tarda el aeropuerto en pasar una hora.
             }
         } catch (InterruptedException e) {
             System.err.println("Ha ocurrido un error de tipo " + e);
