@@ -15,7 +15,7 @@ public class TrenInterno implements Runnable {
     
     // Este run() se ejecutará cuando se llegue a la cantidad 'c' de pasajeros que hayan hecho 'await()'
     public void run(){
-        escribirLOG(PURPLE_BOLD + "El tren está lleno y empieza a viajar" + RESET);
+        escribirLOG(PURPLE_BOLD + "El tren esta lleno y empieza a viajar" + RESET);
         dejarPasajeros();
     }
 

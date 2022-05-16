@@ -1,12 +1,10 @@
-
-import static Auxiliares.Colores.*;
 import java.util.concurrent.locks.ReentrantLock;
+import static Auxiliares.Log.*;
 
 public class Aeropuerto {
     private TrenInterno trenInterno; // Tren interno.
     private PuestoDeAtencion[] puestosDeAtencion; // Arreglo de puestos de atención, uno por aerolinea.
     private ReentrantLock puestoInformes; // Solo hay un puesto de informes y se atiende a UN solo pasajero al mismo tiempo.
-    private Terminal[] terminales;
 
     private Tiempo horario; // Utilizado para saber qué hora es en el aeropuerto y si este está atendiendo pasajeros.
                             // El horario de atención es de 6hs a 22hs. Arranca en 6hs.
@@ -15,7 +13,6 @@ public class Aeropuerto {
         this.puestoInformes = new ReentrantLock();
         this.trenInterno = tr;
         this.puestosDeAtencion = p;
-        this.terminales = t;
         this.horario = ti;
     }
 
@@ -35,11 +32,13 @@ public class Aeropuerto {
     public void ingresarAeropuerto(Pasajero pasajero) {
         try {
             puestoInformes.lock(); // mutex puesto de informes (solo hay uno en el aeropuerto.)
-            Thread.sleep(1500); // Tiempo para atender al pasajero.
-            //System.out.println(pasajero.getNombre() + " entra al puesto de informes y le indican que puesto de atención le corresponde");
+            Thread.sleep(1500); // Tiempo para atender al pasajero en el puesto de informes.
+            escribirLOG(pasajero.getNombre()
+                    + " es atendido en informes y le indican que le corresponde el puesto de atencion n"
+                    + pasajero.getVuelo().getAerolinea());
             puestoInformes.unlock();
             // A continuación el pasajero es derivado al puesto de atención que le corresponde y se dispone a hacer la fila allí.
-            puestosDeAtencion[pasajero.getVuelo().getReserva()].hacerFilaPuestoDeAtencion(pasajero);
+            puestosDeAtencion[pasajero.getVuelo().getAerolinea()].hacerFilaPuestoDeAtencion(pasajero);
         } catch (InterruptedException e) {
             System.err.println("Ha ocurrido un error de tipo " + e);
         }
@@ -48,20 +47,6 @@ public class Aeropuerto {
     // Para dirigirse a la terminal que le tocó, el pasajero utiliza el tren interno del aeropuerto.
     public void viajarATerminal(Pasajero pasajero) {
         trenInterno.dirigirseATerminal();
-    }
-
-    public void intentarIngresarFreeShop(Pasajero pasajero) {
-        switch (pasajero.getVuelo().getTerminal()) {
-            case 'A':
-                terminales[0].intentarIngresarFreeShop(pasajero);
-                break;
-            case 'B':
-                terminales[1].intentarIngresarFreeShop(pasajero);
-                break;
-            case 'C':
-                terminales[2].intentarIngresarFreeShop(pasajero);
-                break;
-        }
     }
 
     public int getHora() {

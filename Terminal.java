@@ -1,4 +1,6 @@
-import java.util.concurrent.Semaphore;
+
+import static Auxiliares.Colores.*;
+import static Auxiliares.Log.*;
 
 public class Terminal {
 
@@ -12,10 +14,14 @@ public class Terminal {
 
     public void intentarIngresarFreeShop(Pasajero pasajero) {
         if (freeShop.intentarIngresar()) {
-            freeShop.ingresar(pasajero);
+            freeShop.ingresar(pasajero, letra);
         } else {
-            System.out.println(pasajero.getNombre() + " quiso entrar al FreeShop pero estaba lleno.");
+            escribirLOG(RED_BOLD + pasajero.getNombre() + " quiso entrar al FreeShop de su terminal "+ letra +" pero estaba lleno." + RESET);
         }
+    }
+
+    public char getLetra(){
+        return this.letra;
     }
 
 }

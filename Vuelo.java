@@ -5,17 +5,17 @@ import static Auxiliares.Log.*;
 
 public class Vuelo implements Runnable {
     private String nombre;
-    private int reserva; // Indica en qué número de aerolinea tiene reserva el pasajero.
+    private int aerolinea; // Indica el número de aerolinea que tiene este vuelo.
     private int puestoDeEmbarque;
-    private char terminal;
+    private Terminal terminal;
     private LocalTime horaVuelo; // Indica a qué hora es el vuelo del pasajero.
     private Tiempo horaInicialAeropuerto;
 
     private boolean despego;
 
-    public Vuelo(String n, int r, Tiempo t, LocalTime hv) {
+    public Vuelo(String n, int a, Tiempo t, LocalTime hv) {
         this.nombre = n;
-        this.reserva = r;
+        this.aerolinea = a;
         this.despego = false;
         this.horaInicialAeropuerto = t;
         this.horaVuelo = hv;
@@ -23,9 +23,9 @@ public class Vuelo implements Runnable {
 
     public void run() {
         try {
+            escribirLOG(RED_BOLD + "DEBUG: " + this.nombre + " con hora asignada: " + horaVuelo.getHour() + "hs. Aerolinea n" + aerolinea
+            + ". Puesto de embarque n" + puestoDeEmbarque + " " + RESET);
             while (!despego) { // Mientras este vuelo no haya partido, se comprueba periodicamente si este vuelo tiene que partir.
-                escribirLOG(BLUE_BOLD + " Hora del " + this.nombre + ": " + horaVuelo.getHour() + " Reserva: " + reserva
-                        + " Puesto de embarque: " + puestoDeEmbarque + " " + RESET);
                 if (horaInicialAeropuerto.getHora() == horaVuelo.getHour()) { // Comprobar si es la hora de salida de este vuelo.
                     escribirLOG("Ha despegado el " + nombre + " . Su hora de despegue eran las " + horaVuelo.getHour());
                     synchronized (this) {
@@ -45,11 +45,11 @@ public class Vuelo implements Runnable {
         return this.nombre;
     }
 
-    public int getReserva() {
-        return this.reserva;
+    public int getAerolinea() {
+        return this.aerolinea;
     }
 
-    public char getTerminal() {
+    public Terminal getTerminal() {
         return this.terminal;
     }
 
@@ -65,7 +65,7 @@ public class Vuelo implements Runnable {
         this.horaVuelo = lt;
     }
 
-    public void setTerminal(char t) {
+    public void setTerminal(Terminal t) {
         this.terminal = t;
     }
 

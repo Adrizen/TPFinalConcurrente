@@ -1,6 +1,7 @@
 
 import java.util.concurrent.locks.ReentrantLock;
 import static Auxiliares.Log.*;
+import static Auxiliares.Colores.*;
 
 public class FreeShop {
     private final int CAPACIDAD_MAXIMA;
@@ -24,13 +25,16 @@ public class FreeShop {
         return pudoIngresar;
     }
 
-    public void ingresar(Pasajero pasajero) {
-        escribirLOG(pasajero.getNombre() + " ingresó al FreeShop.");
+    public void ingresar(Pasajero pasajero, char letra) {
+        escribirLOG(WHITE_UNDERLINED + pasajero.getNombre() + " ingreso al FreeShop de su terminal " + letra
+                + ". Quedan " + (CAPACIDAD_MAXIMA-cantidadPersonasActual) + " lugares" + RESET);
         try {
             Thread.sleep(10000); // tiempo que tarda el pasajero en estar en el FreeShop. (10 seg)
         } catch (InterruptedException e) {
             System.err.println("Ha ocurrido un error de tipo " + e);
         }
+        //escribirLOG(pasajero.getNombre() + " terminó de " );
+        // TODO: Hacer las 2 cajas y aleatoriedad para comprar/solo ver productos.
         mutex.lock();
         cantidadPersonasActual--;
         mutex.unlock();
