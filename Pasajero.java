@@ -24,6 +24,7 @@ public class Pasajero implements Runnable {
                 aeropuerto.ingresarAeropuerto(this);
                 aeropuerto.viajarATerminal(this);
                 // El Pasajero se dirige al FreeShop solo si tiene como mínimo 2 horas hasta que salga su vuelo.
+                escribirLOG(this.nombre + " bajo del tren interno en la terminal " + getVuelo().getTerminal().getLetra());
                 if (Math.abs(aeropuerto.getHora() - vuelo.getHoraVuelo()) >= 2) {
                     intentarIngresarFreeShop();
                 }

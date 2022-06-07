@@ -32,7 +32,7 @@ public class Aeropuerto {
     public void ingresarAeropuerto(Pasajero pasajero) {
         try {
             puestoInformes.lock(); // mutex puesto de informes (solo hay uno en el aeropuerto.)
-            Thread.sleep(1500); // Tiempo para atender al pasajero en el puesto de informes.
+            Thread.sleep(500); // Tiempo para atender al pasajero en el puesto de informes.
             escribirLOG(pasajero.getNombre()
                     + " es atendido en informes y le indican que le corresponde el puesto de atencion n"
                     + pasajero.getVuelo().getAerolinea());
@@ -46,7 +46,7 @@ public class Aeropuerto {
 
     // Para dirigirse a la terminal que le tocó, el pasajero utiliza el tren interno del aeropuerto.
     public void viajarATerminal(Pasajero pasajero) {
-        trenInterno.dirigirseATerminal();
+        trenInterno.dirigirseATerminal(pasajero);
     }
 
     public int getHora() {

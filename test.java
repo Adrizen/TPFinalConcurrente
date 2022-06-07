@@ -2,6 +2,12 @@ import java.time.LocalTime;
 import java.util.Random;
 import static Auxiliares.Log.*;
 
+/*
+    Se recomienda ejecutar test.java en VS Code. Dejar correr durante un minuto o así y luego abrir el log.txt para seguir el algoritmo.
+    Utilizar la extensión 'ANSI Colors' de 'Ilia Pozdnyakov' para abrir el log.txt y poder ver los colores de cada print. Para ello, abrir 
+    log.txt en una ventana de VS Code, presionar 'F1' y buscar la opción 'ANSI Text: Open Preview', en esa preview se deberían  ver los 
+    colores de cada print. (se puede resaltar/seleccionar el texto de un pasajero particular para que sea "highlighted")
+*/
 public class test {
 
     public static void main(String[] args) {
@@ -12,13 +18,14 @@ public class test {
         final int HORA_INICIAL_AEROPUERTO = 6; // La hora inicial del aeropuerto. (atiende de 6hs a 22hs)
         final int CANTIDAD_TERMINALES = 3; // La consigna dice que son 3 terminales: A, B y C.
         final int CANTIDAD_AEROLINEAS = 2; // Cantidad de aerolineas en el aeropuerto.
-        final int CANTIDAD_PASAJEROS = 6; // Cantidad pasajeros que ingresarán al aeropuerto.
+        final int CANTIDAD_PASAJEROS = 9; // Cantidad pasajeros que ingresarán al aeropuerto.
         final int CANTIDAD_VUELOS = 2; // Cantidad de vuelos.
 
         crearLog(); // Arhivo log que registra todos los eventos que ocurren en el aeropuerto.
         Tiempo tiempo = new Tiempo(HORA_INICIAL_AEROPUERTO); // Controla qué hora es en el aeropuerto.
         new Thread(tiempo).start(); // Iniciar el hilo del Tiempo.
         TrenInterno trenInterno = new TrenInterno(CAPACIDAD_MAXIMA_TRENINTERNO); // Tren interno para transportar pasajeros a terminal.
+        new Thread(trenInterno).start();
         HallCentral hall = new HallCentral(CANTIDAD_AEROLINEAS); // Hall central compartido.
         PuestoDeAtencion[] puestosDeAtencion = new PuestoDeAtencion[CANTIDAD_AEROLINEAS]; // Arreglo de puestos de atención.
         Terminal[] terminales = new Terminal[CANTIDAD_TERMINALES]; // Arreglo de terminales.
@@ -36,7 +43,6 @@ public class test {
         for (int i = 0; i < puestosDeAtencion.length; i++) {
             puestosDeAtencion[i] = new PuestoDeAtencion(hall, CAPACIDAD_MAXIMA_PUESTOSDEATENCION, terminales);
         }
-
     }
 
     public static void crearTerminales(Terminal[] terminales, int CAPACIDAD_MAXIMA_FREESHOP) {
@@ -52,7 +58,7 @@ public class test {
         for (int i = 0; i < CANTIDAD_VUELOS; i++) {
             aerolineaAleatoria = r.nextInt(CANTIDAD_AEROLINEAS); // Se selecciona una aerolinea de manera aleatoria.
             // Se crea un vuelo y se le asigna la aerolinea del paso anterior.
-            int horaVueloAleatoria = r.nextInt(23) + 1; // Entero aleatorio para el vuelo, entre 00hs y 23hs
+            int horaVueloAleatoria = r.nextInt(11) + 12; // Entero aleatorio para el vuelo, entre 00hs y 23hs
             LocalTime hora = LocalTime.of(horaVueloAleatoria, 00); // Hora aleatoria para el vuelo, entre 00hs y 23hs
             Vuelo vuelo = new Vuelo("vuelo" + i, aerolineaAleatoria, tiempo, hora);
             vuelos[i] = vuelo; // Se agrega el vuelo recien creado al arreglo de vuelos.
@@ -77,7 +83,6 @@ public class test {
             // Nota: A la hora de crear el vuelo, su n° de aerolinea es creada de manera aleatoria.
         }
     }
-
 }
 
 /*

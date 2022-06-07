@@ -29,13 +29,16 @@ public class FreeShop {
     }
 
     public void ingresar(Pasajero pasajero, char letra) {
+        mutex.lock();
         escribirLOG(WHITE_UNDERLINED + pasajero.getNombre() + " ingreso al FreeShop de su terminal " + letra
                 + ". Quedan " + (CAPACIDAD_MAXIMA - cantidadPersonasActual) + " lugares" + RESET);
+        mutex.unlock();
         try {
             Thread.sleep(5000); // tiempo que tarda el pasajero en entrar y ojear el FreeShop. (5 seg)
             if (comprarOMirar()) {  // El pasajero decide si comprar algo o solo mirar los productos.
                 escribirLOG(BLUE_BRIGHT + pasajero.getNombre() + " decidio comprar algo en el FreeShop." + RESET);
                 cajas.acquire();    // El pasajero ocupa una de las cajas para que le cobren su compra.
+				escribirLOG(pasajero.getNombre() + " esta pagando lo que compro en el FreeShop.");
                 Thread.sleep(5000); // tiempo que tarda el pasajero en hacer su compra. (5 seg)
                 cajas.release();    // El pasajero termina de pagar y libera la caja donde lo atendían.
             } else {
